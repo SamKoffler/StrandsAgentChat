@@ -24,7 +24,6 @@ def letter_counter(word: str, letter: str) -> int:
 
 # Create an agent with tools from the strands-tools example tools package
 # as well as our custom letter_counter tool
-# Using Claude 3.5 Sonnet instead of Claude 4 (more commonly available)
 agent = Agent(
     model="us.anthropic.claude-sonnet-4-20250514-v1:0",  # Using Claude Sonnet 4
     tools=[calculator, current_time, letter_counter]
